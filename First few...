@@ -1,2 +1,12 @@
+Firstly...Hello World!
+
+#include <iostream>
+
+`int main() {
+    std::cout << "Hello World";
+    return 0;
+}`
+
+
 USACO 2018 February Contest Bronze Q1 -
 
