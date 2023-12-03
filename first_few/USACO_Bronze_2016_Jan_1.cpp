@@ -12,3 +12,15 @@ OUTPUT FORMAT (file promote.out):
 Please output three lines, each containing a single integer. The first line should contain the number of participants who were promoted from bronze to silver. The second line should contain the number of participants who were promoted from silver to gold. The last line should contain the number of participants who were promoted from gold to platinum.
 */
 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int br[2], si[2], gl[2], pl[2];
+    cin >> br[0] >> br[1] >> si[0] >> si[1] >> gl[0] >> gl[1] >> pl[0] >> pl[1];
+    int pld = pl[1] - pl[0];
+    int gld = -(gl[0] - pld) + gl[1];
+    int sid = -(si[0] - gld) + si[1];
+    cout << sid << '\n' << gld << '\n' << pld << '\n';
+}
